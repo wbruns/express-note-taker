@@ -1,5 +1,6 @@
 // read from index.js files in Routes folders
 const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 
 const express = require('express');
 
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // tell server which folder and route to use
+app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
