@@ -1,8 +1,13 @@
 {
-    "notes": [
+  "notesArray": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "new note",
+      "text": "this is a new note",
+      "id": "5fa6c17f-48e6-45bf-90a3-4e4482f03b51"
     }
-]
+  ]
 }
