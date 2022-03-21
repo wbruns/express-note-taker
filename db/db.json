@@ -1,5 +1,5 @@
 {
-  "notesArray": [
+  "notes": [
     {
       "title": "Test Title",
       "text": "Test text"
@@ -8,6 +8,36 @@
       "title": "new note",
       "text": "this is a new note",
       "id": "5fa6c17f-48e6-45bf-90a3-4e4482f03b51"
+    },
+    {
+      "title": "test",
+      "text": "bah!",
+      "id": "ecf47488-0785-46c1-8727-130dbe15200f"
+    },
+    {
+      "title": "um",
+      "text": "ahhh!",
+      "id": "57e600d1-08be-4127-ab9d-aa455a52665d"
+    },
+    {
+      "title": "dont change",
+      "text": "please",
+      "id": "ebdbc2a1-404c-4590-b199-1fd27ba87807"
+    },
+    {
+      "title": "hold",
+      "text": "please",
+      "id": "96bc74d4-6bb8-4156-8b35-54b8d5a63e3d"
+    },
+    {
+      "title": "time",
+      "text": "for this to work",
+      "id": "619b1b6a-f9c8-4b28-ae7e-3ec243fdd851"
+    },
+    {
+      "title": "wow ok",
+      "text": "This is great",
+      "id": "da6cd439-eb60-45d3-ab93-279be2762f90"
     }
   ]
 }

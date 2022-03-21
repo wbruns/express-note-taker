@@ -12,11 +12,12 @@ router.get('/notes', (req, res) => {
     res.json(results);
 });
 
+// create a new note
 router.post('/notes', (req, res) => {
     // set id
     req.body.id = uuidv4();
     console.log(req.body.id);
-
+    // validate they've input both fields
     if (!validateNote(req.body)) {
         res.status(400).send('The note is not properly formatted.');
     } else {
