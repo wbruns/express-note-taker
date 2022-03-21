@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 // import functions
-const { createNewNote, validateNote } = require('../../lib/notes');
+const { createNewNote, validateNote, deleteNote } = require('../../lib/notes');
 // import db.json data
 const { notes } = require ('../../db/db.json');
 
@@ -23,6 +23,17 @@ router.post('/notes', (req, res) => {
     } else {
         const note = createNewNote(req.body, notes);
         res.json(note);
+    }
+});
+
+// delete a note
+router.delete('/notes/:id', (req, res) => {
+    const result = deleteNote(req.params.id, notes);
+    if (result) {
+        console.log("in route", result);
+        res.json(result);
+    } else {
+        res.send(404);
     }
 });
 
